@@ -1,0 +1,11 @@
+Coleman Ulry
+CS 232
+Adding Context Switching to CalOS
+
+1. PCB class is defined in the calos.py file.
+2. PCB contains process ID, name, entry point, memory low and memory high, and state of the PCB
+3. Line 180 in main.py creates a PCB
+4. Legal process states: NEW, READY, RUNNING, WAITING, and DONE
+5. current_proc is defined on line 7 of calos.py. It's significant because it allows the programmer access to the running process's pcb, allowing context switching by saving PCB values and loading in new ones.
+6. Using Python's with statement is useful because it allows us to not have to acquire and release the lock, the 'with' does it for us. It makes for cleaner code.
+7. When the countdown reaches 0, the timer expires. The lock is acquired, adds the bus address to the set of devices that raised the interrupt, sets the interrupt, and finally the lock is released.

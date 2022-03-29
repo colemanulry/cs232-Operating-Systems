@@ -1,0 +1,13 @@
+Coleman Ulry
+2/13/21
+
+
+1. 1024
+2. pc, reg0, reg1, reg2
+3. It takes one parameter, a register (jlz <reg>) - it jumps to that register if register value is less than 0
+4. The CPU checks to see if an interrupt has occurred every time the _run_program is called, and the program does not have an error or ends. 
+5. This instruction will show memory from <start> to <end>, whatever those values are.
+6. This instruction will toggle between debugging on and debugging off.
+7. Assembly language files can contain comments, and it can contain blank lines, used for easier readability.
+8. _poke_ram, as the name suggests.
+9. Yes, because assembly language programs include jump functions where you can jump and transfer execution, and some functions like the MOV function will allow you to move data from one location to another. 
